@@ -1,0 +1,27 @@
+{
+  "name": "quick-deck",
+  "version": "0.0.0",
+  "description": "A quick boilerplate for Reveal.js presentations.",
+  "main": "index.js",
+  "dependencies": {
+    "broccoli": "~0.9.0",
+    "broccoli-filter": "~0.1.6",
+    "markdown": "~0.5.0",
+    "broccoli-static-compiler": "^0.1.4",
+    "broccoli-merge-trees": "^0.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf public && broccoli build public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divshot/quick-deck.git"
+  },
+  "author": "Michael Bleigh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/divshot/quick-deck/issues"
+  },
+  "homepage": "https://github.com/divshot/quick-deck"
+}
