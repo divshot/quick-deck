@@ -43,6 +43,22 @@ To create a deck, all you need to do is make a new markdown file in the
 ## To Divide
 ```
 
+## Publishing Your Decks
+
+If you want to publish your deck to a static web host (might we humbly
+suggest [Divshot](http://www.divshot.com/)?) you will need to build a
+distribution. For convenience, you can do so into the `dist` directory
+like so:
+
+    npm run build
+    
+If you'd like to use a different directory, just use `broccoli build`:
+
+    broccoli build [DEST_DIR]
+    
+Unfortunately at the moment Broccoli doesn't have a "watch" command, so
+you'll have to manually trigger each build for publication.
+
 ## Roadmap
 
 Right now this is all very, very basic. Soon you'll hopefully be able to:

@@ -7,11 +7,11 @@ var slideTree = pickFiles('decks', {
   destDir: '/'
 });
 
-var bowerTree = pickFiles('bower_components', {
+var publicTree = pickFiles('public', {
   srcDir: '/',
-  destDir: '/bower_components'
+  destDir: '/'
 });
 
 var slideHTML = filterSlides(slideTree);
 
-module.exports = mergeTrees([slideHTML, bowerTree]);
+module.exports = mergeTrees([slideHTML, publicTree]);
